@@ -19,7 +19,9 @@ Each word is then lemmatized using the Spacy lemmatizer to ensure consistency in
 The first algorithm I used was Naive Bayes Classifier (MultinomialNB) from scikit-learn library. Naive Bayes is a supervised learning classification model based on applying Bayes' theorem. The features are the results of TF-IDF statistic calculation. After hyperparameter tuning I decided to keep the default parameters of the model, as the hyperparameters did not change the training performance. The Naive Bayes Classifier got an accuracy over 92%
 
 ### Stochastic Gradient Descent
-The second algorithm I used was Stochastic Gradient Descent (SGD) from scikit-learn. The reason I chose it is that the single word can classify the new. For instance, the word “Einbruch” is almost an indicator of the new being classified as the second type. Therefore, the task can be seen as a classification problem with 3 classes and not as an NLP problem. The hyperparameter tuning also showed the well performance of default parameters with an accuracy over 95%. 
+The second algorithm I used was Stochastic Gradient Descent (SGD) from scikit-learn. The reason I chose it is that the single word can classify the new. For instance, the word “Einbruch” is almost an indicator of the new being classified as the second type. Therefore, the task can be seen as a classification problem with 3 classes and not as an NLP problem. The hyperparameter tuning also showed the well performance of default parameters with an accuracy over 95%. These are 10 most popular words for each news` category:
+
+![image](https://github.com/ol1g3/crime-news-analyser/assets/67047059/27a3ea9e-5370-4b51-a138-160eb6926318)
 
 # **III. Results**
 In the time range from 28.03.2022 to 27.03.2024 an amount of 1631 news was collected, transformed and analyzed. These are the standings, different colors indicating different types of crime acts *(data-plotting.ipynb)*:
