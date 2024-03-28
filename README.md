@@ -5,7 +5,7 @@ In the modern world, crime presents significant challenges for both law enforcem
 
 # **II. Materials and methods**
 Data preprocessing
-The crime news was collected from the German police portal [link] with a filter on Munich news via POST request and parsing of the resulting JSON file. Each website contains 3 to 6 news articles, which are being segmented into independent news. The data about the district of crime act is also being collected and analyzed. 
+The crime news was collected from the [German police portal](https://www.polizei.bayern.de/aktuelles/pressemitteilungen/index.html) with a filter on Munich news via POST request and parsing of the resulting JSON file. Each website contains 3 to 6 news articles, which are being segmented into independent news. The data about the district of crime act is also being collected and analyzed. 
 
 ## Algorithms
 Independent news is then being splitted into words, which are also being split using a custom composite word splitter (Kompositazerlegung) for German words (compound_splitter.py) using Aho-Corasick algorithm. The examples of the splitter can be seen below *(compound_splitter.py)*: 
